@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.11.1/jquery.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			#nav {
+				width: 100%;
+				height: 100px;
+				/* background-color: #ff2b2e; */
+				background: repeating-linear-gradient(#d0d0d0,#fff);
+				
+			}
+
+			#nav .nav_logo img {
+				width: 60px;
+				height: 60px;
+				position: relative;
+				top: 10px;
+				left: 150px;
+			}
+
+			#nav .nav_logo ul {
+				width: 1000px;
+				position: relative;
+				top: -35px;
+				left: 230px;
+			}
+
+			#nav .nav_logo ul li {
+				float: left;
+				padding-left: 80px;
+				list-style: none;
+				text-align: center;
+				font-family: 微软雅黑;
+			}
+
+			#nav .nav_logo ul li a {
+				text-decoration: none;
+				color: #929292;
+			}
+
+			#nav .nav_logo ul li a:hover {
+				color: red;
+			}
+
+			#nav p {
+				color: #000;
+				position: absolute;
+				top: 25px;
+				right: 170px;
+			}
+			
+			#nav p{
+				margin-top: 3px;
+			}
+
+			#nav p:hover {
+				color: red;
+			}
+			
+			#wditem{
+				width: 80%;
+				height: 100%;
+				/* float: left; */
+				margin-left: 10%;
+				margin-right: 10%;
+				margin-top: 50px;
+				position: relative;
+				display: block;
+				transition: none;
+			}
+			
+			.masonry_brick{
+				width: 25%;
+				height: auto;
+				margin-top: 50px;
+				left: 10%;
+				float: left;
+				
+			}
+			
+			.masonry_brick img{
+				width: 100%;
+				height: auto;
+				border: none;
+				float: left;
+				
+			}
+			
+			.masonry_brick p{
+				text-align: center;
+			}
+			
+			.weddingone{
+				top: 30px;
+				width: 100%;
+				height: 30px;
+				transition: none;
+			}
+			
+			.weddingone li{
+				float: left;
+				list-style: none;
+				padding-left: 30px;
+				font-size: 13px;
+				
+			}
+			
+			
+			.weddingone li a{
+				text-decoration: none;
+				color: #929292;
+			}
+			
+			.weddingone li a:hover{
+				color: red;
+			}
+			
+			.masonry_brick .fl{
+				width: 280px;
+				height: 30px;
+				margin: 10px auto;
+				/* padding: 10px 0; */
+			}
+			
+			.masonry_brick .fl p:hover{
+				background-color: #929292;
+			}
+			
+			.pic{
+				width: 100%;
+				height: auto;
+				float: left;
+				text-align: center;
+				margin-top: 100px;
+			}
+			.pic img{
+				text-align: center;
+			}
+			
+			.foot{
+				width: 100%;
+				height: 230px;
+				background-color: #929292;
+				float: left;
+				margin-top: 150px;
+			}
+			.foot_1,.foot_2{
+				width: 600px;
+				margin-top: 60px;
+				margin-left: 15%;
+				/* margin-left: 50px; */
+				
+			}
+			.foot_1 a,.foot_2 a{
+				padding-left: 0px;
+				font-size: 16px;
+				color: #000000;
+				text-decoration: none;
+				padding-left: 50px;
+			}
+			
+			.foot_1 a:hover,.foot_2 a:hover{
+				color: #FF0000;
+			}
+			
+			.jpg{
+				/* width: 300px; */
+				float: right;
+				margin-top: -90px;
+				margin-right: 10%;
+			}
+			.jpg img{
+				margin-right: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="nav">
+			<div class="nav_logo">
+				<img src="../img/11111.jpg" alt="">
+				<ul>
+					<li><a href="全部.html">全部<br>All</a></li>
+					<li><a href="草坪.html">草坪<br>Lawn</a></li>
+					<li><a href="主题.html">主题<br>Theme</a></li>
+					<li><a href="中式.html">中式<br>Chinese Style</a></li>
+					<li><a href="西式.html">西式<br>Western Style</a></li>
+					<li><a href="创意.html">创意<br>Originality</a></li>
+				</ul>
+			</div>
+			<p>登录/注册</p>
+		</div>
+		
+		
+		<div id="wditem">
+			
+			<div class="weddingone">
+				<ul  id="color">
+					<li><a href="">最新活动</a></li>
+					<li><a href="">婚礼案例</a></li>
+					<li><a href="">宝宝宴</a></li>
+					<li><a href="">寿宴</a></li>
+					<li><a href="">时尚派对</a></li>
+					<li><a href="">行业新闻</a></li>
+				</ul>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/1.jpg" alt="一起開始的旅程" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>一起开始的旅程</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/20191219021040278.jpg" alt="Yang&Jiao" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>Yang&Jiao</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/20191011104559232%20(1).jpg" alt="维爱永珩" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>维爱永珩</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/4.jpg" alt="海贼王" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>海贼王</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/5.jpg" alt="怦然心动" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>怦然心动</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/6.jpg" alt="羽 · 恋" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>羽 · 恋</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/7.jpg" alt="偏偏喜欢你" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>偏偏喜欢你</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/8.jpg" alt="罗马的岁月" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>罗马的岁月</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/9.jpg" alt="妮可兔与布朗熊" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>妮可兔与布朗熊</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/10.jpg" alt="匆匆那年" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>匆匆那年</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/11.jpg" alt="十 · 约" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>十 · 约</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/12.jpg" alt="遇 见" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>遇 见</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/13.jpg" alt="十七岁的夏天" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>十七岁的夏天</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/14.jpg" alt="城堡里的美人鱼" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>城堡里的美人鱼</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/15.jpg" alt="L & L ’wedding" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>L & L ’wedding</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/16.jpg" alt="Di & Jia" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>Di & Jia</p>
+					</div>
+				</div>
+			</div>
+			<div class="wditem masonry_brick">
+				<a href="#" class="fl"><img src="../img/123.jpg" alt="价格&更多风格" /></a>
+				<div class="wd_desc fl">
+					<div>
+						<p>价格&更多风格</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pic">
+			<img src="../img/pic.jpg" >
+			
+			
+		</div>
+		
+		<div class="foot">
+			<div class="foot_1">
+				<a href="">首页 HOME PAGE</a>
+				<a href="" style="padding-left: 150px;">婚礼价格 ABOUT US</a>
+			</div>
+			<div class="foot_2">
+				<a href="">婚礼策划 WEDDING PLANNING</a>
+				<a href="">婚宴酒店 WEDDING DRESS</a>
+			</div>
+			<div class="jpg">
+				<a href=""><img src="../img/wx.jpg"></a>
+				<a href=""><img src="../img/wb.jpg"></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$("ul#color").on("click","li",function(){
+				$(this).css("color","red")
+			})
+		</script>
+	</body>
+</html>
